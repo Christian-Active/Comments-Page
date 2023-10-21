@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./fonts-6/css/all.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="modes">
+    <div class="color-mode"><i id="dark" class="fa-regular fa-moon""></i></div>
+    <div class="color-mode"><i id="light" class="far fa-sun""></i></div>
+    <p>Switch to dark mode</p>
+  </section>
+  <main class="container">
+    <section id="comments-section">
+      <!-- amy section -->
+      <section id="reply-amy">
+        <div class="comments">
+          <div class="head">
+            <div><img src="./images/avatars/image-amyrobson.png" alt=""></div>
+            <div><p class="name">amyrobson</p></div>
+            <div><p class="time">1 month ago</p></div>
+          </div>
+          <div class="body">
+            Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+          </div>
+            <div id="vote1" class="votes">
+              <div class="plus"><img src="./images/icon-plus.svg" alt=""></div>
+              <div><p class="vote">12</p></div>
+              <div class="minus"><img src="./images/icon-minus.svg" alt=""></div>
+            </div>
+            <div class="replies">
+              <div><img src="./images/icon-reply.svg" alt=""></div>
+              <div><p id="amy" class="reply">Reply</p></div>
+            </div>
+        </div>  
+
+        <div class="reply-section">
+
+        </div>
+      </section>
+
+  <!-- max section -->
+      <section id="reply-max">
+        <div class="comments">
+          <div class="head">
+            <div><img src="./images/avatars/image-maxblagun.png" alt=""></div>
+            <div><p class="name">maxblagun</p></div>
+            <div><p class="time">2 weeks ago</p></div>
+          </div>
+          <div class="body">
+            Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+          </div>
+            <div id="vote2" class="votes">
+              <div  class="plus"><img src="./images/icon-plus.svg" alt=""></div>
+              <div><p class="vote">5</p></div>
+              <div class="minus"><img src="./images/icon-minus.svg" alt=""></div>
+            </div>
+            <div class="replies">
+              <div><img src="./images/icon-reply.svg" alt=""></div>
+              <div><p id="max" class="reply">Reply</p></div>
+            </div>
+        </div>
+
+
+        <div class="reply-section">
+            <div class="reply comments">
+              <div class="head">
+                <div><img src="./images/avatars/image-ramsesmiron.png" alt=""></div>
+                <div><p class="name">ramsesmiron</p></div>
+                <div><p class="time">1 week ago</p></div>
+              </div>
+              <div class="body">
+                <p><span class="at">@maxblagun </span>If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+              </div>
+                <div id="vote3" class="votes">
+                  <div class="plus"><img src="./images/icon-plus.svg" alt=""></div>
+                  <div><p class="vote">4</p></div>
+                  <div class="minus"><img src="./images/icon-minus.svg" alt=""></div>
+                </div>
+                <div class="replies">
+                  <div><img src="./images/icon-reply.svg" alt=""></div>
+                  <div><p id="ram" class="reply">Reply</p></div>
+                </div>
+            </div>
+          
+            <div id="julie" class="reply comments">
+              <div class="head">
+                <div><img src="./images/avatars/image-juliusomo.png" alt=""></div>
+                <div><p class="name">juliusomo</p></div>
+                <div class="you">you</div>
+                <div><p class="time">2 days ago</p></div>
+              </div>
+              <div class="body">
+                <p><span class="at">@ramsesmiron </span><span class="innertext">I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</span></p>
+              </div>
+                <div id="vote4" class="votes">
+                  <div class="plus"><img src="./images/icon-plus.svg" alt=""></div>
+                  <div><p class="vote">2</p></div>
+                  <div class="minus"><img src="./images/icon-minus.svg" alt=""></div>
+                </div>
+                <div class="options">
+                  <div id="delete">
+                    <div><img src="./images/icon-delete.svg" alt=""></div>
+                    <div><p>Delete</p></div>
+                  </div>
+                  <div id="edit">
+                    <div><img src="./images/icon-edit.svg" alt=""></div>
+                    <div><p>Edit</p></div>
+                  </div>
+                </div>
+            </div>          
+         
+        </div>
+      </section>
+      
+    </section>
+
+
+
+
+    <!-- add comment -->
+    <section class="add-comment comments">
+      <div class="text-area"><textarea id="text-area" placeholder="Add a comment..."></textarea></div>
+      <div class="image"><img src="./images/avatars/image-juliusomo.png" alt=""></div>
+      <div class="button"><button id="send">SEND</button><button id="resend">RESEND</button></div>
+      <input type="checkbox" name="" id="checkbox">
+    </section>
+
+    <!-- confirmation -->
+    <section class="confirmation">
+      <div><h3>Delete Comment</h3></div>
+      <div><p>Are you sure you want to delete this comment? This will remove the comment and can't be undone.</p></div>
+      <div class="confirm-btns">
+        <div><button id="no">NO, CANCEL</button></div>
+        <div><button id="yes">YES, CONFIRM</button></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
